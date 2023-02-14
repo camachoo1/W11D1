@@ -7,11 +7,10 @@ import './ProductView.css';
 function ProductView({ products }) {
   // TODO: Replace with state variable
   const [sideOpen, setSideOpen] = useState(
-    (localStorage.getItem('sideOpen') === 'true' ? true : false) ||
-      true
+    localStorage.getItem('sideOpen') === 'true' ? true : false
   );
   const [selectedProduct, setSelectedProduct] = useState(
-    JSON.parse(localStorage.getItem('selectProduct')) || ''
+    JSON.parse(localStorage.getItem('selectedProduct')) || ''
   );
 
   useEffect(() => {
