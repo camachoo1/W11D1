@@ -46,7 +46,7 @@ const Form = () => {
       return alert('Cannot submit due to errors');
     }
 
-    const formFieldsObject = {
+    const formObj = {
       name,
       email,
       phone,
@@ -66,7 +66,7 @@ const Form = () => {
     setNotes('');
     setValidationErrors([]);
     setHasSubmitted(false);
-    console.log(formFieldsObject);
+    console.log(formObj);
   };
 
   return (
